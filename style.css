@@ -1,15 +1,18 @@
 body{
     margin: 0;
     padding: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
 }
 .container{
     padding-top: 1px;
     padding-bottom: 10px;
     padding-left: 50px;
     padding-right: 50px;
-   
-    
 }
+
 
 nav{
     display: flex;
@@ -29,6 +32,10 @@ nav ul li{
     width: 180px;
     text-align: right;
     padding: 5px;
+    text-decoration: none;
+}
+nav ul li a{
+    text-decoration: none;
     
 }
  nav ul li:nth-child(1) {
@@ -39,22 +46,17 @@ nav ul li:nth-child(2){
     color: blue;
     border-top: blue 1px solid;
     text-align: center;
-    
 }
 nav ul li:nth-child(4){
-    color: blue;
-   
-    
+    color: blue;  
 }
 .logo{
     margin-top: -20px;
 }
-
 header{
     width: 100%;
-    
 }
-.search{
+.research{
     margin-bottom: 20px;
 }
 input{
@@ -64,12 +66,11 @@ input{
     text-align: left;
     font-size: 16px;
     font-weight: 900;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+    margin-left: -5px !important;
     border: #F2F2F2 2px solid ;
 }
 .btn{
-    width: 200px;
+    width: 160px;
     height: 40px;
     background-color: blue;
     color: white;
@@ -85,15 +86,50 @@ input{
     flex-wrap: wrap;
     justify-content:stretch;
 }
+.filtres:nth-child(1){
+    border: none !important;
+}
 .menu .filtres{
-    height: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
     border: solid 1px #F2F2F2;
-    border-radius: 10px;
-    text-align: left;
-    margin-right: 180px !important;
+    border-left: none;
+    border-radius: 20% / 50%;
+    margin-right: 150px !important;
+    padding-right: 20px;
+   
+}
+.filtres:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.fa-map-marker-alt{
+    width: 40px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    text-align: center;
+    background-color: #F2F2F2;
+
+}
+.fa-money-bill-wave,.fa-child,.fa-heart,.fa-dog{
+    width: 40px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #DEEBFF;
+    padding-top: 10px;
+    color: #0065FC;
+}
+.fa-star{
+    color: #0065FC;
+}
+#etoile{
+    color: #F2F2F2
+}
+.fa-info-circle{
+    background-color:white;
+    color: rgb(63, 132, 211);
+}
+.fa-chart-line{
+     float: right; 
 }
 
 .seloger{
@@ -113,7 +149,7 @@ input{
 
 }
 .populaires{
-    width: 27%; 
+    width: 28%;  
     border-radius: 15px;
     background-color: #F2F2F2;
     padding-left: 40px;
@@ -129,13 +165,13 @@ input{
     
 }
 .cart-image01{
-    background-image: url("images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-image: url("images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
 .cart-image02{
-    background-image: url("images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-image: url("images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
 }
 .cart-image03{
-    background-image: url("images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-image: url("images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 .cart-text1{
     width: 180px;
@@ -190,26 +226,23 @@ li{
    background-position: center center;
 }
 .cart-image1{
-    background-image: url("images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-image: url("images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 .cart-image2{
-    background-image: url("images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-image: url("images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 .cart-image3{
-    background-image: url("images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-image: url("images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 .cart-image4{
-    background-image: url("images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-image: url("images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 .cart-image5{
-    background-image: url("images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-image: url("images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 .cart-image6{
-    background-image: url("images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-image: url("images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
-
-
-
 
 .activites{
     display: flex;
@@ -226,9 +259,6 @@ li{
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
-   
-    
-  
 }
 .item{
     height: 600px;
@@ -261,27 +291,27 @@ li{
 }
 .cart-img1{
     height: 520px;
-    background-image: url("images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); 
+    background-image: url("images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); 
 }
 .cart-img2{
     height: 280px;
-    background-image: url("images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-image: url("images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 .cart-img3{
     height: 140px;
-    background-image: url("images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-image: url("images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 }
 .cart-img4{
     height: 520px;
-    background-image: url("images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-image: url("images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 .cart-img5{
     height: 200px;
-    background-image: url("images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-image: url("images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
 .cart-img6{
     height: 230px;
-    background-image: url("images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-image: url("images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 .cart-text2{
     height: 20px;
@@ -289,6 +319,9 @@ li{
     padding: 10px;
     
 } 
+.cart a,.item a{
+    text-decoration: none;
+}
 
 footer{
     display: flex;
@@ -350,14 +383,18 @@ footer{
         justify-content: space-between;
     }
     input{
-        width: 360px;
+        
         height: 50px;
     }
     .btn{
         width: 50px;
         height: 50px;
-        margin-left: -30px !important;
         border-radius: 15px;
+    }
+    .fa-map-marker-alt{
+        width: 40px;
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
     .filtres{
         margin-right: 70px;
@@ -429,10 +466,10 @@ footer{
 
 }
 
-/* @media screen and (min-width: 801px )and (max-width: 1000px) {
+
+ @media screen and (min-width: 801px )and (max-width: 1600px) {
     .hebergements{
-        width: 40%;
-        
+        width: 50%;  
     }
     .populaires{
         width: 34%;
@@ -440,4 +477,51 @@ footer{
     }
     
 }
- */
+@media screen and (min-width: 801px )and (max-width: 1550px) {
+    .hebergements{
+        width: 55%;
+       
+        
+    }
+    .populaires{
+        width: 34%;
+       
+    }
+    
+}
+@media screen and (min-width: 801px )and (max-width: 1450px) {
+    .hebergements{
+        width: 65%;
+       
+        
+    }
+    .populaires{
+        width: 25%;
+       
+    }
+    
+}
+@media screen and (min-width: 801px )and (max-width: 1350px) {
+    .hebergements{
+        width: 55%;
+       
+        
+    }
+    .populaires{
+        width: 44%;
+        
+    }
+    
+}
+@media screen and (min-width: 801px )and (max-width: 1300px) {
+    .hebergements{
+        width: 40%;
+       
+        
+    }
+    .populaires{
+        width: 40%;
+        
+    }
+    
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservia</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" >
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,21 +12,22 @@
 </head>
 <body>
     <div class="container">
+        <!-- section header-->
         <header>
             <nav>
              <ul>
                 <li><img src="images/logo/Reservia@3x.png" width="150px" height="70px" class="logo" alt=""></li>
-                <li>Hébergement</li>
-                <li>Activités</li>
+                <li><a href="#heb">Hébergement</a> </li>
+                <li><a href="#act"> Activités</a></li>
                 <li>S'inscrire</li>
              </ul>
            </nav>
         
-            <div>
+            <div class="sub-title">
                 <h1>Touvez votre hébergement pour des vacances de rêve</h1>
                 <p> <h4>En plein centre ville ou en pleine nature</h4></p>
             </div>
-            <div class="search">
+            <div class="research">
                 <form>
                 <i class="fas fa-map-marker-alt"></i> 
                 <input type="search" placeholder=" Marseille, France">
@@ -35,32 +36,34 @@
             </div>
             <div class="menu">
                 <div class="filtres"><strong>Filtres</strong></div>
-                <div class="filtres"><i class="fas fa-money-bill-wave"></i><strong>Economique</strong></div>
+                <div class="filtres"><i class="fas fa-money-bill-wave"></i>  <strong>Economique</strong></div>
                 <div class="filtres"><i class="fas fa-child"></i><strong>Familial</strong></div>
                 <div class="filtres"><i class="fas fa-heart"></i><strong>Romantique</strong></div>
                 <div class="filtres"><i class="fas fa-dog"></i><strong>Animaux autorisés</strong></div>
             </div>
-            <p><h6><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</h6> </p>
+            <p><h5><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</h5> </p>
         </header>
-
+        <!-- section seloger (hébergements et populaires)--> 
         <div class="seloger">
-
-            <div class="hebergements">
+            <!-- section hébergement -->
+            <div class="hebergements" id="heb">
                 <h1>Hébergement à Marseille</h1>
                 <div class="marseille">
                  <div class="cart">
-                     <div class="cart-image1"></div>
+                    <a href="">
+                     <div class="cart-image1"></div></a>
                      <div class="cart-text">
                          <ul>
                              <li><strong> Auberge La Cannebièrre</strong></li>
                              <li>Nuit à partir de 25€</li>
                              <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                <i class="fas fa-star"></i><i class="fas fa-star" id="etoile"></i></li>
                          </ul>
                      </div>
                  </div>
                  <div class="cart">
-                    <div class="cart-image2"></div>
+                    <a href="">
+                    <div class="cart-image2"></div></a>
                     <div class="cart-text">
                         <ul>
                             <li><strong>Hôtel du port </strong></li>
@@ -71,40 +74,43 @@
                     </div>
                  </div>
                  <div class="cart">
-                    <div class="cart-image3"></div>
+                     <a href="">
+                    <div class="cart-image3"></div></a>
                     <div class="cart-text">
                         <ul>
                             <li><strong>Hôtel Les mouettes </strong></li>
                             <li>Nuit à partir de 76€</li>
                             <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i> </li>
+                                <i class="fas fa-star"></i><i class="fas fa-star" id="etoile"></i> </li>
                         </ul>
                     </div>
                  </div>
                  <div class="cart">
-                    <div class="cart-image4"></div>
+                     <a href="">
+                    <div class="cart-image4"></div></a>
                     <div class="cart-text">
                         <ul>
                             <li><strong>Hôtel de La mer </strong></li>
                             <li>Nuit à partir de 46€</li>
                             <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                <i class="fas fa-star" id="etoile"></i><i class="fas fa-star" id="etoile"></i></li>
                         </ul>
                     </div>
                  </div>
                  <div class="cart">
-                    <div class="cart-image5"></div>
+                     <a href="">
+                    <div class="cart-image5"></div></a>
                     <div class="cart-text">
                         <ul>
                             <li><strong>Auberge Le Panier </strong></li>
                             <li>Nuit à partir de 23€</li>
                             <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i> </li>
+                                <i class="fas fa-star"></i><i class="fas fa-star" id="etoile"></i> </li>
                         </ul>
                     </div>
                  </div>
-                 <div class="cart">
-                    <div class="cart-image6"></div>
+                 <div class="cart"><a href="">
+                    <div class="cart-image6"></div></a>
                     <div class="cart-text">
                         <ul>
                             <li><strong>Hôtel chez Amina </strong></li>
@@ -117,7 +123,7 @@
                 </div>
                 <h3>Afficher plus</h3>
             </div>
-
+            <!-- section populaires-->
             <div class="populaires">
                 <h1>Les plus populaires<i class="fas fa-chart-line"></i></h1>
                 <div class="lespluspopulaires">
@@ -139,7 +145,7 @@
                             <li><strong>Au coeur de l'eau Chambres d'hôtes</strong></li>
                             <li>Nuit à partir de 71€</li>
                             <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                <i class="fas fa-star"></i><i class="fas fa-star" id="etoile"></i></li>
                         </ol>
                        </div>
                     </div>
@@ -150,7 +156,7 @@
                             <li><strong> Hôtel Tout bleu et Blanc</strong></li>
                             <li>Nuit à partir de 68€</li>
                             <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                <i class="fas fa-star"></i><i class="fas fa-star" id="etoile"></i></li>
                         </ol>
                        </div>
                     </div>
@@ -159,33 +165,32 @@
 
             </div>
         </div>
-
-        <div class="activites">
-            
+        <!-- section activités -->
+        <div class="activites" id="act">
             <h1>Activités à Marseille</h1>
             <div class="mescartes">
-                <div class="item">
-                     <div class="cart-img1"></div>
+                <div class="item"><a href="">
+                     <div class="cart-img1"></div></a>
                      <div class="cart-text2"><strong>View Port</strong></div>
                 </div>
-                <div class="item">
-                    <div class="cart-img2"></div>
+                <div class="item"><a href="">
+                    <div class="cart-img2"></div></a>
                     <div class="cart-text2"><strong>Fort de Pomègues</strong></div>
                 </div>
-                <div class="item">
-                    <div class="cart-img3"></div>
+                <div class="item"><a href="">
+                    <div class="cart-img3"></div></a>
                     <div class="cart-text2"><strong>Île du frioul</strong></div>
                 </div>
-                <div class="item">
-                    <div class="cart-img4"></div>
+                <div class="item"><a href="">
+                    <div class="cart-img4"></div></a>
                     <div class="cart-text2"><strong>Parc National des Calanques</strong></div>
                 </div>
-                <div class="item">
-                    <div class="cart-img5"></div>
+                <div class="item"><a href="">
+                    <div class="cart-img5"></div></a>
                     <div class="cart-text2"><strong>Notre-Dame-de-la-Garde</strong></div>
                 </div>
-                <div class="item">
-                    <div class="cart-img6"></div>
+                <div class="item"><a href="">
+                    <div class="cart-img6"></div></a>
                     <div class="cart-text2"><strong> Parc Longchamp</strong></div>
                 </div>
             </div>
@@ -193,6 +198,7 @@
         </div>
        
     </div>
+    <!-- section footer -->
         <footer>
             <div class="apropos">
                 <h2>A propos</h2>
