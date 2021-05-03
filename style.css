@@ -1,8 +1,5 @@
 /* document css */
-body{
-	margin: 0px;
-	padding: 0px;
-}
+
 main{
 	padding: 0px 150px 0px 150px;
 }
@@ -195,7 +192,7 @@ li{
 
 @media (max-width: 560px){
 main {
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
 }
 .seloger{
 	flex-direction: column-reverse;
@@ -282,6 +279,10 @@ main {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
+body{
+	margin: 0px;
+	padding: 0px;
+}
 	
 	
 }
@@ -290,11 +291,10 @@ main {
 
 @media screen and (max-width: 1024px )and (min-width: 561px){
 	main{
-    padding: 10px;	
+    padding: 0px 10px 0px 10px;	
 }
 .seloger{
 	flex-wrap: wrap;
-	background-color: crimson;
 }
 
 .seloger-hebergements{
@@ -318,11 +318,9 @@ main {
 @media screen and (max-width: 1624px )and (min-width: 1025px){
 .seloger{
 	flex-wrap: wrap;
-	background-color: gold;
-	
 }
 main{
-    padding: 10px;	
+    padding: 0px 10px 0px 10px;	
 }
 
 .seloger-hebergements{
