@@ -9,13 +9,7 @@ main{
 	padding: 0px 100px 0px 100px;
 }
 
-/*a{
-    text-decoration: none;
-	color: black;
-}*/
-
 nav{ 
-	width: 100%;
     display: flex;
 	flex-wrap: wrap;	
 }
@@ -288,9 +282,6 @@ li{
 }
 
 
-
-
-
 @media screen and (max-width: 1204px) and (min-width: 768px){
 	
    .seloger{
@@ -328,11 +319,8 @@ li{
        width: 46%;
 	}
 }
+
 @media screen and (min-width: 100px) and (max-width: 767px){
-	body{
-		margin: 0;
-		padding: 0;
-	}
     main {
        padding: 0px;
     }
