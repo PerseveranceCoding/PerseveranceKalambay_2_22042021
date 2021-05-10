@@ -10,8 +10,11 @@ main{
 }
 
 nav{ 
+	width: 100%;
     display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/*background-color: aqua;*/
 }
 .logo{
 	height: 80px;
@@ -23,27 +26,27 @@ nav div{
 	width: 11em;
 	padding: 50px 0px 0px 0px;
 	text-align: center;
+	
 }
 nav div:nth-child(1){
 	flex-grow: 1;
 	text-align: inherit;
+	
 }	
 nav div:nth-child(2){
 	border-top: #0065FC solid 3px;
+	
 }
 nav div:nth-child(4){
 	color:#0065FC;
 }
+
 nav div a{
 	text-decoration: none;
 	color: black;
 }
 .navbleu{
 	color: #0065FC;
-}
-
-.btn-two{
-	display: none;
 }
 
 .filter{
@@ -58,7 +61,6 @@ nav div a{
     padding-right: 10px; 
     border-radius: 50px;
     border: 2px solid #F2F2F2;
-    
 }
 .filter-title:nth-child(1){
 	border: none;
@@ -72,11 +74,18 @@ nav div a{
 	color: #0065FC;
     width: 1.2em;
     height: 1.2em;
-	
 }
-.filter-title:hover{
-    border: 2px solid #0065FC;
-    
+.fas:hover{
+    background-color: #0065FC;
+	color:  #DEEBFF;
+}
+
+.fa-info-circle{
+	border: #f2f2f2 solid 2px;
+	border-radius: 50px;
+	color: white;
+	background-color: #0065FC;
+	
 }
 .filter-title:nth-child(1):hover{
 	border: none;
@@ -87,17 +96,21 @@ nav div a{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-.btn-one,.btn-two{
+.btn-one{
     padding: 1em;
 	background-color: #0065FC;
 	border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 	border: 0px;
 	color: white;
-	
-	
 }
+
+.btn-two{
+	display: none;
+}
+
 input{
+	width: 22em;
     padding: 1em;
 	margin: 0px -4px;
 	border: #f2f2f2 solid 1px;
@@ -145,7 +158,7 @@ form{
 	margin-bottom: 20px;
     background-color: white;
 }
-.image-hebergement {
+.hebergement-image {
     width: 100%;
 	height: 20vh;
 	
@@ -181,7 +194,7 @@ form{
     margin-bottom: 20px;
     background-color: white;
 }
-.image-populaires{
+.populaire-image{
 	width: 14vw;
 	height: 24vh;
 }
@@ -390,15 +403,18 @@ li{
 	
 	nav div:nth-child(4){
 	   order: 2;
+	   width: 50vw;
 	   text-align: right;	
     }
 	nav div:nth-child(2){
 	   order: 3;
+	   width: 50vw;
 	   border-top:none;
 	   border-bottom: #0065FC solid 3px;
     }
 	nav div:nth-child(3){
 	   order: 4;
+	   width: 50vw;
 	   border-bottom: #f2f2f2 solid 3px;
     }
 	nav div a{
@@ -408,17 +424,39 @@ li{
 	.btn-one{
 		display: none;
 	}
+
 	.btn-two{
 		display:inline;
+		width: 4em;
+        padding: 1em;
+	    background-color: #0065FC;
+	    border-radius: 15px;
+	    border: 0px;
+	    color: white;
+		margin: 0px -15px;
+}
+	.filter{
+		width: 100%;
 	}
-	
 	.filter-title:nth-child(1){
-	    margin-right: 44px;
+		width: 100vw;
+	}.filter-title:nth-child(2){
+		width: 50vw;
+	}.filter-title:nth-child(3){
+		width: 30vw;
+	}
+	.filter-title:nth-child(4){
+		width: 50vw;
+	}.filter-title:nth-child(5){
+		width: 60vw;
 	}
 	
 	footer{
 	flex-direction: column;
    }
+	.header-title{
+		padding: 20px;
+	}
 
 	
 }
