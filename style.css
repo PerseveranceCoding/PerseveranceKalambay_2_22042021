@@ -356,12 +356,68 @@ footer{
     main {
        padding: 0px;
     }
-	.research-title{
+	
+    nav div:nth-child(n){
+        width: 50%;
+	}
+	nav div:nth-child(4){
+	   order: 2;
+	   text-align: right;	
+    }
+	nav div:nth-child(2){
+	   order: 3;
+	   border-top:none;
+	   border-bottom: #0065FC solid 3px;
+    }
+	nav div:nth-child(3){
+	   order: 4;
+	   border-bottom: #f2f2f2 solid 3px;
+    }
+	nav div a{
+	   text-decoration: inherit;
+	}
+
+    /* full-research */
+	.full-research{
 		padding: 20px;
 	}
+	.btn-one{
+		display: none;
+	}
+	.btn-two{
+		display:inline;
+		width: 4em;
+        padding: 1em;
+	    background-color: #0065FC;
+	    border-radius: 15px;
+	    border: 0px;
+	    color: white;
+		margin: 0px -15px;
+    }
+	input{
+		width: 18em;
+	}
+	.filter{
+		width: 100%;
+	}
+	.filter-title:nth-child(1){
+		width: 100vw;
+	}.filter-title:nth-child(2){
+		width: 50vw;
+	}.filter-title:nth-child(3){
+		width: 30vw;
+	}
+	.filter-title:nth-child(4){
+		width: 50vw;
+	}.filter-title:nth-child(5){
+		width: 60vw;
+	}
+
+    /* section seloger */
     .seloger{
-	   flex-direction: column-reverse;
-     }
+	    width: auto;
+	    flex-direction: column-reverse;
+    }
 	/* class seloger-populaires */
     .seloger-populaires{
 		width: auto;
@@ -391,7 +447,7 @@ footer{
         width: 100%;
 		-webkit-box-shadow: 2px 2px 10px 5px #f2f2f2;
          box-shadow: 2px 2px 10px 5px #f2f2f2;
-   }
+    }
 	
 	/* section activites */
 	.full-activites{
@@ -413,61 +469,11 @@ footer{
 	   height: 80%;
 	   object-fit: cover;
     }
-	
-	nav div:nth-child(n){
-        width: 50%;
-	}
-	nav div:nth-child(4){
-	   order: 2;
-	   text-align: right;	
-    }
-	nav div:nth-child(2){
-	   order: 3;
-	   border-top:none;
-	   border-bottom: #0065FC solid 3px;
-    }
-	nav div:nth-child(3){
-	   order: 4;
-	   border-bottom: #f2f2f2 solid 3px;
-    }
-	nav div a{
-	   text-decoration: inherit;
-	}
-	
-	.btn-one{
-		display: none;
-	}
 
-	.btn-two{
-		display:inline;
-		width: 4em;
-        padding: 1em;
-	    background-color: #0065FC;
-	    border-radius: 15px;
-	    border: 0px;
-	    color: white;
-		margin: 0px -15px;
-}
-	.filter{
-		width: 100%;
-	}
-	.filter-title:nth-child(1){
-		width: 100vw;
-	}.filter-title:nth-child(2){
-		width: 50vw;
-	}.filter-title:nth-child(3){
-		width: 30vw;
-	}
-	.filter-title:nth-child(4){
-		width: 50vw;
-	}.filter-title:nth-child(5){
-		width: 60vw;
-	}
-	
 	.footer-paragraphe{
 	    flex-direction: column;
 	    padding: 2rem;
-   }
+    }
 	
 
 	
