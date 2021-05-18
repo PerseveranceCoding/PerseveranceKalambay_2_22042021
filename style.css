@@ -9,6 +9,7 @@ body{
 main{
 	padding: 0 100px 0 100px;
 }
+
 /* section header */
 
 nav{ 
@@ -26,7 +27,7 @@ nav{
 nav div{
 	height: 3em;
 	width: 11em;
-	padding: 50px 0 0 0;
+	padding: 3.12em 0 0 0;
 	text-align: center;
 	
 }
@@ -55,12 +56,14 @@ nav div a{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 59vw;
+	width: 56vw;
 	
 }
 .filter-title {
+	display: flex;
+	align-items: center;
 	margin-top: 20px;
-    padding-right: 10px; 
+	padding-right: 5px;
     border-radius: 50px;
     border: 2px solid #F2F2F2;
 }
@@ -69,13 +72,12 @@ nav div a{
 	align-self: center;
 	}	
 	
-.fa-child,.fa-heart,.fa-money-bill-wave,.fa-dog {
+.fas-filter{
     border-radius: 50px;
 	padding: 0.6em;
     background-color: #DEEBFF ;
 	color: #0065FC;
-    width: 1.2em;
-    height: 1.2em;
+	
 }
 .fas-filter:hover{
     background-color: #0065FC;
@@ -96,6 +98,7 @@ nav div a{
 
 .filter-title:nth-child(1):hover{
 	border: none;
+	background-color: inherit;
 	}
 .fa-map-marker-alt{
     padding:  1em 1.9em 1em 1.9em;
@@ -287,6 +290,10 @@ form{
 .item:nth-child(6){
     height: 290px;
 }
+.item a{
+    text-decoration: none;
+	color: #000;
+}
 
 /* section footer */
 
@@ -343,7 +350,9 @@ footer{
 @media screen and (min-width: 768px) and (max-width: 1024px){
 	main {
        padding: 0px;
+	   
     }
+	
 	.hebergement-carte {
        width: 46%;
 	}
@@ -355,6 +364,7 @@ footer{
 @media screen and (min-width: 100px) and (max-width: 767px){
     main {
        padding: 0px;
+	   width: auto;
     }
 	
     nav div:nth-child(n){
@@ -386,7 +396,7 @@ footer{
 	}
 	.btn-two{
 		display:inline;
-		width: 4em;
+		width: 15%;
         padding: 1em;
 	    background-color: #0065FC;
 	    border-radius: 15px;
@@ -395,22 +405,14 @@ footer{
 		margin: 0px -15px;
     }
 	input{
-		width: 18em;
+		width: 70%;
 	}
 	.filter{
 		width: 100%;
 	}
+	
 	.filter-title:nth-child(1){
 		width: 100vw;
-	}.filter-title:nth-child(2){
-		width: 50vw;
-	}.filter-title:nth-child(3){
-		width: 30vw;
-	}
-	.filter-title:nth-child(4){
-		width: 50vw;
-	}.filter-title:nth-child(5){
-		width: 60vw;
 	}
 
     /* section seloger */
