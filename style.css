@@ -7,7 +7,7 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 main{
-	padding: 0 100px 0 100px;
+	padding: 0 100px;
 }
 
 /* section header */
@@ -479,7 +479,10 @@ footer{
 	    flex-direction: column;
 	    padding: 2rem;
     }
-	
+}
 
-	
+@media screen and (min-width: 1440px) and (max-width: 1884px){
+	.footer-paragraphe{
+	   max-width: 940px;
+    }
 }
